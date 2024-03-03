@@ -38,6 +38,7 @@ body {
   font-size: 1rem;
   line-height: inherit;
   color: inherit;
+  transition: background-color 0.3s ease;
   margin-top: 71px; /* Offset body content by navbar height. */
   padding-top: 0;
   counter-reset: captions;
@@ -47,6 +48,11 @@ body {
   body {
     margin-top: 51px; /* Offset body content by navbar height. */
   }
+}
+
+body.dark-theme {
+  background-color: #23252f !important;
+  color: #f8f8f2;
 }
 
 /* Body text */
@@ -1114,4 +1120,55 @@ div.alert a:hover {
   color: #fff;
   background-color: #f44336; /* Material Red500 */
   border-color: #ebccd1;
+}
+
+/* #light-toggle {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+} */
+
+#light-toggle {
+  padding: 0;
+  border: 0;
+  background-color: inherit;
+}
+
+body.dark-theme .home-section {
+  background-color: #23252f !important;
+  color: #f8f8f2;
+}
+
+body.dark-theme .navbar-default {
+  background-color: #23252f !important;
+  color: #f8f8f2;
+}
+
+body.dark-theme h1,
+body.dark-theme h2,
+body.dark-theme h3,
+body.dark-theme h4,
+body.dark-theme h5,
+body.dark-theme h6,
+body.dark-theme b,
+body.dark-theme .navbar-nav a,
+body.dark-theme .navbar-brand
+{
+  color: #f8f8f2;
+}
+
+body.dark-theme h2[itemprop="name"] {
+  color: #f8f8f2 !important;
+}
+
+body.dark-theme .nav-item a:hover {
+  color: #f09228;
+}
+
+body.dark-theme hr {
+  border-color: #34495e;
+}
+
+.toggle-container button {
+  margin-top: 0;
 }
