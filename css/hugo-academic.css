@@ -1172,3 +1172,30 @@ body.dark-theme hr {
 .toggle-container button {
   margin-top: 0;
 }
+
+.site-footer {
+  text-align: center;
+}
+
+.powered-by {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: nowrap;
+}
+
+.powered-by a,
+.powered-by img,
+.powered-by span {
+  display: inline-block;
+  margin: 0 5px;
+}
+
+.powered-by a:last-child,
+.powered-by span {
+  margin-right: 0;
+}
+
+.pull-right {
+  margin-left: auto;
+}
