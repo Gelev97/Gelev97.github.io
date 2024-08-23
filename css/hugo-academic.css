@@ -1199,3 +1199,8 @@ body.dark-theme hr {
 .pull-right {
   margin-left: auto;
 }
+
+.justify-text p {
+  text-align: justify;
+  text-justify: inter-word;
+}
