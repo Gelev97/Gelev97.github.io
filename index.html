@@ -16,7 +16,11 @@
     <link rel="stylesheet" href="/css/academicons.min.css" />
     <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Lato:400,700|Merriweather|Roboto+Mono" />
     <link rel="stylesheet" href="/css/hugo-academic.css" />
-    <link rel="icon" type="image/svg" href="/img/favicon/favicon.ico" />
+    <link rel="icon" type="image/svg+xml" href="/img/favicon/robot.svg" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/img/favicon/robot-32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/img/favicon/robot-16.png" />
+    <link rel="apple-touch-icon" href="/img/favicon/robot-180.png" />
+    <link rel="shortcut icon" href="/img/favicon/robot.ico" />
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-N1CN3KHMTJ"></script>
 </head>
 
@@ -131,7 +135,7 @@
                             <img class="img-fluid img-rounded" src="/img/learn.gif">
                         </div>
                         <div class="col-md-8">
-                            <b><a href="https://arxiv.org/pdf/2511.17765">LEARN: Learning End-to-End Aerial
+                            <b><a href="https://arxiv.org/abs/2511.17765">LEARN: Learning End-to-End Aerial
                                     Resource-Constrained Multi-Robot Navigation
                                 </a></b><br>
                             <span style='font-size: 16px;'>Darren Chiu*, Zhehui Huang*, <b>Ruohai Ge</b>, Gaurav S.
@@ -140,6 +144,12 @@
                             <b>ArXiv preprint arXiv:2511.17765, 2025</b>
                             <br>
                             <b>ICRA 2025 25 years of Aerial Robotics Workshop (Spotlight)</b>
+                            <br>
+                            <i class="fas fa-file-pdf"></i><a href="#"> PDF</a>
+                            <img src="/img/arxiv.svg" alt="arXiv" style="display:inline-block;height:1em;width:0.73em;vertical-align:-0.15em;"><a href="#"> arXiv</a>
+                            <i class="fa fa-globe"></i><a href="#"> Project Page</a>
+                            <i class="fa fa-code"></i><a href="#"> Code</a>
+                            <i class="fas fa-video"></i><a href="#"> Video</a>
                             <br>
                             <i>A safety-guided RL framework enabling resource-constrained multi-UAV navigation in
                                 cluttered environments with zero-shot sim-to-real transfer.</i>
@@ -159,6 +169,12 @@
                             <br>
                             <b>IEEE Transactions on Robotics (T-RO), 2025</b>
                             <br>
+                            <i class="fas fa-file-pdf"></i><a href="#"> PDF</a>
+                            <img src="/img/arxiv.svg" alt="arXiv" style="display:inline-block;height:1em;width:0.73em;vertical-align:-0.15em;"><a href="#"> arXiv</a>
+                            <i class="fa fa-globe"></i><a href="#"> Project Page</a>
+                            <i class="fa fa-code"></i><a href="#"> Code</a>
+                            <i class="fas fa-video"></i><a href="#"> Video</a>
+                            <br>
                             <i>An innovative visual localization system for robotic agents, enhancing autonomy in
                                 long-term, large-scale applications using stable descriptors unaffected by viewpoint and
                                 illumination.</i>
@@ -177,6 +193,12 @@
                                 Howie Choset, Sebastian Scherer</span>
                             <br>
                             <b>IEEE Transactions on Robotics (T-RO), 2023</b>
+                            <br>
+                            <i class="fas fa-file-pdf"></i><a href="#"> PDF</a>
+                            <img src="/img/arxiv.svg" alt="arXiv" style="display:inline-block;height:1em;width:0.73em;vertical-align:-0.15em;"><a href="#"> arXiv</a>
+                            <i class="fa fa-globe"></i><a href="#"> Project Page</a>
+                            <i class="fa fa-code"></i><a href="#"> Code</a>
+                            <i class="fas fa-video"></i><a href="#"> Video</a>
                             <br>
                             <i>A framework for assembling and smoothing LiDAR map segments into a complete, city-scale
                                 map, even without GPS or initial estimations.</i>
@@ -459,6 +481,16 @@
             const sunIcon = toggleButton.querySelector('.fa-sun');
             moonIcon.style.display = moonIcon.style.display === 'none' ? 'inline-block' : 'none';
             sunIcon.style.display = sunIcon.style.display === 'none' ? 'inline-block' : 'none';
+        });
+    </script>
+
+    <script>
+        // Open all external links in a new tab
+        document.querySelectorAll('a[href]').forEach(function (link) {
+            if (link.hostname && link.hostname !== window.location.hostname) {
+                link.setAttribute('target', '_blank');
+                link.setAttribute('rel', 'noopener noreferrer');
+            }
         });
     </script>
 
