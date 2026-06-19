@@ -56,6 +56,13 @@
             width: auto;
             height: auto;
         }
+        /* Inline/fallback project videos must fill their column. iOS Safari renders
+           a <video> at its default ~300px intrinsic width unless width is forced,
+           so .img-fluid (max-width only) leaves them small on real iPhones. */
+        video.img-fluid {
+            width: 100%;
+            height: auto;
+        }
         /* Touch / small screens: no cursor, so keep a normal inline image instead */
         @media (hover: none), (max-width: 767px) {
             #hover-preview { display: none !important; }
