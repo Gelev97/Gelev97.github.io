@@ -1159,6 +1159,19 @@ div.alert a:hover {
   padding: 0;
   border: 0;
   background-color: inherit;
+  /* Match the line box of .navbar-brand so the icon centers on the same
+     baseline as the nav links instead of collapsing to the icon's height. */
+  display: inline-block;
+  height: 50px;
+  line-height: 50px;
+  vertical-align: top;
+}
+
+@media screen and (max-width: 1200px) {
+  #light-toggle {
+    height: 40px;
+    line-height: 40px;
+  }
 }
 
 body.dark-theme .home-section {
